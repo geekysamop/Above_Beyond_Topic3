@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Car Control Panel - Driver</title>
+    
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f0f0f0;
+          padding: 20px;
+        }
+      
+        h1 {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      
+        h2 {
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+      
+        .data {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+          margin-bottom: 20px;
+        }
+      
+        button {
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-right: 10px;
+        }
+      
+        button:hover {
+          background-color: #0062cc;
+        }
+      
+        span {
+          font-weight: bold;
+        }
+      </style>
+      
+</head>
+  <body>
+    <h1>Smart Car Control Panel - Driver</h1>
+    <div id="navbar"></div>
+    
+    <div class="data" style="margin-top: 20px;">
+      <h2>Car Data</h2>
+      <p>Speed: <span id="speed"></span> mph</p>
+      <p>Fuel Level: <span id="fuelLevel"></span>%</p>
+      <p>Battery Level: <span id="batteryLevel"></span>%</p>
+      <p>Location: <span id="location"></span></p>
+    </div>
+    <div class="data">
+      <h2>Engine Control</h2>
+      <button id="startButton">Start Engine</button>
+      <button id="stopButton">Stop Engine</button>
+      <button id="go-back-btn">Go Back</button>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</html>
